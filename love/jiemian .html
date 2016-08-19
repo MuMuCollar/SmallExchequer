@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="utf-8">
+	<title>登录界面</title>
+	<style type="text/css">
+     h1{
+     	font-size: 30px;
+     }
+     #content{
+        margin: 0 auto;
+        text-align: center;
+        width: 200px;
+        height: 300px;
+        background-color: gray;
+        border: 2px solid blue;
+     }
+     #zhanghao{
+        position: relative;
+        top: 5px;
+        font-size: 20px;
+        color: white;
+     }
+     #mima{
+        position: relative;
+        top: 15px;
+        color: white;        
+        font-size: 20px;
+     }
+     input{
+        /*width: 130px;*/
+        /*background-color: blue;*/
+        height: 25px;
+        border: 1px solid red;
+     }
+     #fxk{
+        font-size: 18px;
+        height: 50px;
+        position: relative;
+        top:25px;       
+     }
+     a{
+        text-decoration: none;
+        color: white;
+     }
+     #zhuce{
+      
+
+        font-size: 18px;
+        height: 50px;
+        position: relative;
+        top:20px; 
+
+        display: inline-block;
+     }
+     #wangji{
+        
+        font-size: 18px;
+        height: 10px;
+        position: relative;
+        top:20px;
+        left:3px;        
+        display: inline-block;
+      
+     }
+     button{
+        position: relative;
+        top:20px;
+        width: 100px;
+        height: 40px;
+        font-size: 20px;
+     }
+     </style>
+</head>
+<body>
+     <div id="content">
+     <h1>QQ账号登陆</h1>
+     <div id="zhanghao">账号：<input placeholder="请输入账号"></div>
+     <div id="mima">密码：<input type="password" placeholder="请输入密码"></div>
+     <div id="fxk">
+     <input type="checkbox">记住密码
+     <input type="checkbox">自动登录
+     </div>
+     <div id="zhuce">
+     <a href="http://zc.qq.com/chs/index.html" target="blank">注册账号</a>
+     </div>
+     <div id="wangji">
+     <a href="https://aq.qq.com/cn2/findpsw/pc/pc_find_pwd_input_account" target="blank">忘记密码</a>
+     </div>
+     
+     <a href="#"><button onclick="openWindow()">登陆</button></a>
+         
+     </div>
+     <script type="text/javascript">
+     var win;
+     function openWindow() {
+        var str="";
+        win=window.close("jiemian.html")
+        win=window.open("丫头.html","_blank","width=1200px,height=1000px,left=400px,top=80px");
+         // body...
+        
+     }
+     </script>
+</body>
+</html>
